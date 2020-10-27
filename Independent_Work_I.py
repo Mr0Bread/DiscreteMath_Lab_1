@@ -68,3 +68,30 @@ def show_graph(graph):
     nx.draw_circular(graph, with_labels=True)
     plt.show()
 
+
+print('Neighbors of simple graph')
+compute_and_display_neighbors(simple_G)
+print('Neighbors of directed graph')
+compute_and_display_neighbors(directed_G)
+
+print('\n\nDegrees of simple graph')
+compute_and_display_degrees(simple_G)
+
+print('\n\n')
+print_sum_of_degrees(simple_G)
+
+print('\n\nIndegrees and degrees of directed graph')
+print_indegrees_and_out_degrees(directed_G)
+
+print('\n\nSimple graph list of edges')
+print_edge_list(simple_G)
+print('Directed graph list of edges')
+print_edge_list(directed_G)
+
+print('\n\nSimple graph list of vertices')
+print_list_of_vertices(simple_G.edges)
+print('Directed graph list of vertices')
+print_list_of_vertices(directed_G.edges)
+
+show_graph(simple_G)
+show_graph(directed_G)
