@@ -48,7 +48,7 @@ def print_sum_of_degrees(simple_graph):
     for x in range(1, len(simple_graph) + 1):
         result += simple_graph.degree[x]
     else:
-        print(result)
+        print('Result of degrees:', result)
 
 
 def print_indegrees_and_out_degrees(directed_graph):
@@ -67,6 +67,4 @@ def print_list_of_vertices(list_of_edges):
 def show_graph(graph):
     nx.draw_circular(graph, with_labels=True)
     plt.show()
-
-
 
